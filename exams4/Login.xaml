@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="exams4.Login"
+             Title="Login">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+
+
+            </Grid.RowDefinitions>
+            <Image Source="shoping.png" Grid.Row="0" HeightRequest="200" />
+
+            <Label Text="Welcome Back" Grid.Row="1" FontSize="20"  FontAttributes="Italic" HorizontalOptions="Center" VerticalOptions="Start" TextColor="CornflowerBlue"></Label>
+            <Label Text="To" Grid.Row="1" FontSize="20"  FontAttributes="Italic" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue"></Label>
+            <Label Text="OUR REMAINDER" Grid.Row="1" FontSize="25"  FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End" TextColor="CornflowerBlue"></Label>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Entry Grid.Row="0" HorizontalOptions="Center"
+                        FontSize="Medium"
+                        Margin="0,18"
+                        WidthRequest="250"
+                        Placeholder="Enter Your Email"></Entry>
+                <Entry Grid.Row="1" HorizontalOptions="Center"
+                       x:Name="inPutpass"
+                       IsPassword="True"
+                       FontSize="Medium"
+                       WidthRequest="250"
+                       Placeholder="Enter Your Password"></Entry>
+                <ImageButton x:Name="eye" Source="visible.png" HorizontalOptions="Center" Margin="210,0,0,0" Clicked="eye_Clicked"  WidthRequest="20" Grid.Row="1"></ImageButton>
+            </Grid>
+            <Button x:Name="Skip" Clicked="Skip_Clicked" Grid.Row="3" HorizontalOptions="Center"  Text="Skip !!" FontSize="Medium" BackgroundColor="Transparent" TextColor="CornflowerBlue" VerticalOptions="End" FontAttributes="Bold"/>
+            <Button x:Name="forgot" Text="Forgot Password !" Grid.Row="3" Clicked="forgot_Clicked" VerticalOptions="Center" BackgroundColor="White" TextColor="DarkBlue" FontSize="Medium"></Button>
+            <Button x:Name="signIn" Text="Sign in" Clicked="signIn_Clicked" Grid.Row="4" BackgroundColor="CornflowerBlue" WidthRequest="250" TextColor="White" FontSize="Large" FontAttributes="Italic" CornerRadius="25"></Button>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition  Width="250"></ColumnDefinition>
+                    <ColumnDefinition Width="260"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="D'ont have an account ?" Grid.Column="0" Margin="80,0,0,0" BackgroundColor="White" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+                <Button x:Name="Sing" Clicked="Sing_Clicked" HorizontalOptions="Start" Text="Sign Up" Grid.Column="1" FontSize="Medium" BackgroundColor="Transparent"  Margin="-20,0,150,0" TextColor="CornflowerBlue" VerticalOptions="Center" FontAttributes="Bold"/>
+            </Grid>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="exams4.AddNote"
+             Title="AddNote">
+    <VerticalStackLayout Spacing="20">
+
+
+        <Entry x:Name="NewItemEntry" BackgroundColor="White" Placeholder="add new item" WidthRequest="300" />
+        <Button x:Name="AddItemClicked" Text="Add Item" Clicked="AddItemClicked_Clicked" WidthRequest="100" />
+
+
+        <StackLayout  VerticalOptions="Center" >
+            <Frame x:Name="CheckBoxFrame"  HeightRequest="600" WidthRequest="500">
+            <ScrollView>
+                    <StackLayout  VerticalOptions="Center" x:Name="CheckBoxContainer" Padding="40">
+                           
+
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="لحم دجاج" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="لحم خروف" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="لحم بقري" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="بطاطا" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="جزر" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="بصل" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="ثوم" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="طماطم" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="باذنجان" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="فلفل" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="خيار" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="سلاطة خص" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الفول" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="لفت" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="بازلاء" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="فاصولاء" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="حمص" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="عدس" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الفول" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="معكرونة" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="سباغتي" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="محمصة" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="البيض" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الجليب" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الخبز" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="البرتقال" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="المشمش" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الخوخ" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="البطيخ" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الموز" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الفروالة" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="اناناس" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="التمر" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="كيوي" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="التفاح" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الكرز" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الاجاص" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="الرمان" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="التين" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="العنب" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="izem" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="ramy" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="hamoud" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="شربة" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="راس الحانوت" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="فلفل اسود" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="فلفل احمر" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="كمون" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="زعفران" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="جومبو" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="زيت" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="زيت زيتون" VerticalOptions="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <CheckBox HorizontalOptions="Start" />
+                            <Label Text="ماء" VerticalOptions="Center" />
+                        </StackLayout>
+                        <Button x:Name="AddInStack" Text="List" Clicked="AddInStack_Clicked" WidthRequest="80"/>
+                    </StackLayout>
+                </ScrollView>
+                
+            </Frame>
+        </StackLayout>
+            
+        
+    </VerticalStackLayout>
+</ContentPage>
